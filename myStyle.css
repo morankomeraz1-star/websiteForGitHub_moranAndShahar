@@ -1,0 +1,322 @@
+﻿/* תגיות סמנטיות */
+body 
+{
+    font-family: 'Heebo', sans-serif;
+    background-color: #f7f9f8;
+    color: #2d3748;
+    font-size: 15px;
+    line-height: 1.7;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.05), 0 2px 4px 1px rgba(0, 0, 0, 0.03);
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.05), 0 2px 4px 1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 3px solid #e2e8f0;
+    text-align: center;
+    padding: 2px;
+    margin: 20px auto 0 auto;
+    color: #4a5568;
+    font-size: 13px;
+}
+
+/* כותרות */
+h1 {
+    font-size: 30px;
+    color: #5b7065;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 20px;
+    color: #d4a373;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 17px;
+    color: #8da499;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+
+/* תפריטים - פירורילחם ותפריט ניווט */
+.breadcrumbs {
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    color: #4a5568;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.breadcrumbs a {
+    color: #5b7065;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+nav a:hover, nav a:focus {
+    color:  #5b7065;
+    background-color: #d8e2dc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.05), 0 2px 4px 1px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 8px 0;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: #2d3748;
+}
+
+.dropdown-content a:hover {
+    background-color:#e9edc9;
+    color: #5b7065;
+}
+
+/* לוגו */
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: #5b7065;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    color: #d4a373;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* תוכן */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2px;
+    align-items: start;
+}
+
+
+/* כפתורים כעיצוב כרטיסיות בדף הבית */
+.btn {
+    display: inline-block;
+    background-color:  #5b7065;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #8da499;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 32px;
+}
+
+.card {
+    background-color: #f7f9f8;
+    border: 1px solid #e2e8f0;
+    border-radius:12px;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    color: #5b7065;
+    margin-top: 0;
+}
+
+.card a {
+    color: #d4a373;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* עיצוב של דף הבית */
+
+.hero {
+    display: grid;
+    gap: 40px; 
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 40px; 
+}
+
+.hero-image img {
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* עיצוב של התמונות */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+#title {
+    font-size: 46px;
+}
+
+.form-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: inherit; 
+}
+
+input[type="email"]:valid:not(:placeholder-shown) {
+    border: 2px solid #5b7065;
+}
+
+input[type="email"]:invalid:not(:placeholder-shown) {
+    border: 2px solid #e53e3e;
+}
+
+#submitBtn:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#submitBtn:not(:disabled) {
+    cursor: pointer;
+}
+
+.role-img {
+    max-width: 200px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.topic-img {
+    opacity: 0.3;
+    max-width: 120px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    opacity: 1;
+}
